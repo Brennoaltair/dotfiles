@@ -1,66 +1,51 @@
-# Configuração AeroSpace - Setup do Brenno
+# Configuração do AeroSpace - Brenno A.
+# Localização: ~/.config/aerospace/aerospace.toml
+
 start-at-login = true
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
-accordion-padding = 0
-default-root-container-layout = 'tiles'
-default-root-container-orientation = 'auto'
-on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-automatically-unhide-macos-hidden-apps = false
 
-[key-mapping]
-preset = 'qwerty'
-
+# --- Configuração de Espaçamento (Gaps) ---
 [gaps]
 inner.horizontal = 16
-inner.vertical = 16
-outer.bottom = 16
-outer.top = 16
-outer.right = 16
-outer.left = 16
+inner.vertical   = 16
+outer.left       = 16
+outer.bottom     = 16
+outer.top        = 16
+outer.right      = 16
 
 [mode.main.binding]
-# Atalhos de Apps
-alt-enter = 'exec-and-forget open -a Terminal'
-alt-b = 'exec-and-forget open -a "Brave Browser"'
-alt-s = 'exec-and-forget open -a Slack'
-alt-shift-f = 'layout tiling floating'
-
-# Navegação (Foco)
+# --- Atalhos de Movimentação (Foco) ---
+# Agora usando S para esquerda e D para direita como solicitado
 alt-s = 'focus left'
+alt-d = 'focus right'
 alt-j = 'focus down'
 alt-k = 'focus up'
-alt-d = 'focus right'
 
-# Movimentação de Janelas
+# --- Atalhos de Movimentação de Janelas (Arrastar) ---
 alt-shift-s = 'move left'
+alt-shift-d = 'move right'
 alt-shift-j = 'move down'
 alt-shift-k = 'move up'
-alt-shift-d = 'move right'
 
-# Tela Cheia
-alt-f = 'fullscreen'
+# --- Atalhos de Layout ---
+# Mudamos os atalhos de layout para não conflitarem com o novo S e D
+alt-q = 'layout v_accordion' 
+alt-w = 'layout h_accordion'
+alt-e = 'layout tiles horizontal vertical'
 
-# Workspaces (Áreas de Trabalho)
+# --- Atalhos de Workspaces ---
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
 
-# Mover janela para outro Workspace
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
 alt-shift-3 = 'move-node-to-workspace 3'
 alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
 
-# Resetar configuração
+# --- Comandos do Sistema ---
 alt-shift-r = 'reload-config'
-
-# Regras Automáticas
-[[on-window-detected]]
-if.app-id = 'com.brave.Browser'
-run = ['move-node-to-workspace 1']
-
-[[on-window-detected]]
-if.app-id = 'com.apple.finder'
-run = ['layout floating']
