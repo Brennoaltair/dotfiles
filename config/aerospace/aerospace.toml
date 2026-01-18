@@ -1,0 +1,66 @@
+# Configuração AeroSpace - Setup do Brenno
+start-at-login = true
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+accordion-padding = 0
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+automatically-unhide-macos-hidden-apps = false
+
+[key-mapping]
+preset = 'qwerty'
+
+[gaps]
+inner.horizontal = 16
+inner.vertical = 16
+outer.bottom = 16
+outer.top = 16
+outer.right = 16
+outer.left = 16
+
+[mode.main.binding]
+# Atalhos de Apps
+alt-enter = 'exec-and-forget open -a Terminal'
+alt-b = 'exec-and-forget open -a "Brave Browser"'
+alt-s = 'exec-and-forget open -a Slack'
+alt-shift-f = 'layout tiling floating'
+
+# Navegação (Foco)
+alt-s = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-d = 'focus right'
+
+# Movimentação de Janelas
+alt-shift-s = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-d = 'move right'
+
+# Tela Cheia
+alt-f = 'fullscreen'
+
+# Workspaces (Áreas de Trabalho)
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+
+# Mover janela para outro Workspace
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+
+# Resetar configuração
+alt-shift-r = 'reload-config'
+
+# Regras Automáticas
+[[on-window-detected]]
+if.app-id = 'com.brave.Browser'
+run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = ['layout floating']
