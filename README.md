@@ -22,7 +22,6 @@ Setup automatizado do macOS com Homebrew, apps essenciais e configuração do Ae
 
 ## ⚡ Deploy
 
-Execute o comando abaixo no Terminal:
-
 ```bash
 git clone [https://github.com/Brennoaltair/dotfiles.git](https://github.com/Brennoaltair/dotfiles.git) ~/dotfiles && ~/dotfiles/install.sh
+
