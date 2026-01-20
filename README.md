@@ -4,7 +4,7 @@ Setup automatizado do macOS com Homebrew, apps essenciais e configuração do Ae
 
 ---
 
-## 🚀 Workflow
+## Workflow
 
 1. **Homebrew**
    Verifica, instala e atualiza o Homebrew.
@@ -20,8 +20,9 @@ Setup automatizado do macOS com Homebrew, apps essenciais e configuração do Ae
 
 ---
 
-## ⚡ Deploy
+##  Deploy
 
 ```bash
 git clone [https://github.com/Brennoaltair/dotfiles.git](https://github.com/Brennoaltair/dotfiles.git) ~/dotfiles && ~/dotfiles/install.sh
+
 
