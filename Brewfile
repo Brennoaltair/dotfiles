@@ -3,6 +3,7 @@ tap "nikitabobko/tap"
 
 # Casks (Aplicativos com interface gráfica)
 cask "figma"
+cask "adobe-creative-cloud"
 cask "obs"
 cask "vlc"
 cask "upscayl"
