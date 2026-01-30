@@ -1,0 +1,41 @@
+start-at-login = true
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+[gaps]
+inner.horizontal = 8
+inner.vertical   = 8
+outer.left       = 16
+outer.bottom     = 16
+outer.top        = 16
+outer.right      = 16
+
+[mode.main.binding]
+alt-s = 'focus left'
+alt-d = 'focus right'
+alt-j = 'focus down'
+alt-k = 'focus up'
+
+
+alt-shift-s = 'move left'
+alt-shift-d = 'move right'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+
+alt-q = 'layout v_accordion' 
+alt-w = 'layout h_accordion'
+alt-e = 'layout tiles horizontal vertical'
+
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+
+alt-shift-r = 'reload-config'
