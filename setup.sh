@@ -10,11 +10,16 @@ fi
 
 brew update
 
-echo "Iniciando a instalação dos aplicativos..."
-if brew bundle --file=./Brewfile; then
-    echo "✅ Todos os aplicativos foram instalados com sucesso!"
+echo "Verificando aplicativos instalados..."
+if brew bundle check --file=./Brewfile &> /dev/null; then
+    echo "✅ Todos os aplicativos já estão presentes. Nenhuma instalação necessária."
 else
-    echo "❌ Ocorreu um erro ao instalar alguns aplicativos."
+    echo "📦 Alguns aplicativos estão faltando. Iniciando instalação..."
+    if brew bundle --file=./Brewfile; then
+        echo "✅ Instalação concluída com sucesso!"
+    else
+        echo "❌ Ocorreu um erro durante a instalação."
+    fi
 fi
 
 mkdir -p ~/.config/aerospace
