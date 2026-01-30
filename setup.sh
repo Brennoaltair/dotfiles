@@ -8,7 +8,14 @@ if ! command -v brew &> /dev/null; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-brew bundle --file=./Brewfile
+brew update
+
+echo "Iniciando a instalação dos aplicativos..."
+if brew bundle --file=./Brewfile; then
+    echo "✅ Todos os aplicativos foram instalados com sucesso!"
+else
+    echo "❌ Ocorreu um erro ao instalar alguns aplicativos."
+fi
 
 mkdir -p ~/.config/aerospace
 cp ./aerospace.toml ~/.config/aerospace/aerospace.toml
