@@ -3,12 +3,12 @@ enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 
 [gaps]
-inner.horizontal = 8
-inner.vertical   = 8
-outer.left       = 16
-outer.bottom     = 16
-outer.top        = 16
-outer.right      = 16
+inner.horizontal = 10
+inner.vertical   = 10
+outer.left       = 0
+outer.bottom     = 0
+outer.top        = 0
+outer.right      = 0
 
 [mode.main.binding]
 alt-s = 'focus left'
