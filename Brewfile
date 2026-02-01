@@ -1,4 +1,5 @@
-tap "nikitabobko/tap"
+brew "mas"
+mas "Magnet", id: 441258766
 
 cask "figma"
 cask "adobe-creative-cloud"
@@ -18,5 +19,4 @@ cask "alt-tab"
 cask "shottr"
 cask "logi-options-plus"
 cask "jordanbaird-ice"
-cask "nikitabobko/tap/aerospace"
 cask "keyboard-maestro"
