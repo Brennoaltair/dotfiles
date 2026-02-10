@@ -2,7 +2,6 @@ tap "nikitabobko/tap"
 
 cask "figma"
 cask "adobe-creative-cloud"
-cask "upscayl"
 cask "visual-studio-code"
 cask "antigravity"
 cask "notion"
