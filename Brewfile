@@ -17,3 +17,4 @@ cask "keyboard-maestro"
 cask "nikitabobko/tap/aerospace"
 cask "latest"
 brew "mole"
+mas "One Thing", id: 1604176982
