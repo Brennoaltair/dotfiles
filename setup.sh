@@ -25,8 +25,6 @@ fi
 mkdir -p ~/.config/aerospace
 cp ./aerospace.toml ~/.config/aerospace/aerospace.toml
 
-curl -fsSL https://raw.githubusercontent.com/tw93/Mole/main/scripts/setup-quick-launchers.sh | bash
-
 defaults write com.apple.dock autohide-delay -float 0; 
 defaults write com.apple.dock autohide-time-modifier -float 0; 
 killall Dock
