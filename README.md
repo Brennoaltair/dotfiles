@@ -20,19 +20,6 @@ Instalação manual:
 
 ffmpeg, gh, git-lfs, glab, jq, mas, neovim, node, pipx, sevenzip, shellcheck, yt-dlp, zoxide, pnpm e vercel.
 
-## Comandos do Zsh
-
-| Comando | O que faz |
-|---|---|
-| `g`, `gs`, `ga`, `gc`, `gp`, `gpl`, `gco`… | Atalhos de Git |
-| `mkcd <dir>` | Cria a pasta e entra nela |
-| `extract <arquivo>` | Extrai zip, tar, 7z etc. |
-| `pr` | Abre ou cria o PR da branch |
-| `serve [porta]` | Servidor HTTP na pasta atual |
-| `ports` | Portas em uso |
-| `ip` | IP público |
-| `reload` | Recarrega o `.zshrc` |
-
 ## AeroSpace
 
 | Tecla | O que faz |
