@@ -1,0 +1,15 @@
+name: Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install validators
+        run: brew install neovim shellcheck
+      - name: Run checks
+        run: ./scripts/check.sh
