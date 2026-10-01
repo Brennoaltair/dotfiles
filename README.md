@@ -12,7 +12,6 @@ AeroSpace, Bitwarden, Claude, Discord, Docker Desktop, Figma, Google Chrome, Key
 
 Instalação manual:
 
-- [Gnome](https://lexfriedman.com/gnome/)
 - [Hovercraft](https://sandwich.vision/hovercraft)
 - [Maestri](https://www.themaestri.app)
 
