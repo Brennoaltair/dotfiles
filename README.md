@@ -1,31 +1,10 @@
 # dotfiles
 
-Meu setup de Mac (Apple Silicon, macOS 14+).
-
 ## Instalação
-
-Entre na Mac App Store e rode:
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Brennoaltair/dotfiles/main/install.sh)"
 ```
-
-O repositório fica em `~/dotfiles`. Não apague a pasta, as configurações apontam pra ela.
-
-Depois:
-
-1. Reabra o terminal.
-2. Libere o AeroSpace em **Ajustes do Sistema → Privacidade e Segurança → Acessibilidade**.
-3. Instale na mão o que não vem pelo Homebrew (lista abaixo).
-
-## O que ele faz
-
-- Instala Homebrew, apps, CLIs e pacotes do `Brewfile`
-- Liga as configs de Zsh, Git, Neovim, WezTerm e AeroSpace
-- Aplica as preferências do macOS (`macos-defaults.sh`)
-- Atualiza Homebrew e Mac App Store todo dia às 10h
-
-Pode rodar de novo sem medo: o que já está pronto é pulado.
 
 ## Apps
 
@@ -41,9 +20,7 @@ Instalação manual:
 
 ffmpeg, gh, git-lfs, glab, jq, mas, neovim, node, pipx, sevenzip, shellcheck, yt-dlp, zoxide, pnpm e vercel.
 
-## Atalhos
-
-### Zsh
+## Comandos do Zsh
 
 | Comando | O que faz |
 |---|---|
@@ -56,7 +33,7 @@ ffmpeg, gh, git-lfs, glab, jq, mas, neovim, node, pipx, sevenzip, shellcheck, yt
 | `ip` | IP público |
 | `reload` | Recarrega o `.zshrc` |
 
-### AeroSpace
+## AeroSpace
 
 | Tecla | O que faz |
 |---|---|
