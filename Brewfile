@@ -2,6 +2,7 @@
 tap "nikitabobko/tap"
 
 # Apps (Casks)
+cask "alfred"
 cask "figma"
 cask "obsidian"
 cask "discord"
