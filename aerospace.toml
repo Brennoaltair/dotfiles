@@ -93,7 +93,3 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.bitwarden.desktop'
 run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.github.wez.wezterm'
-run = 'layout floating'
