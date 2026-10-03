@@ -8,7 +8,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/Brennoaltair/dotfiles/ma
 
 ## Apps
 
-AeroSpace, Alfred, Bitwarden, Claude, Discord, Docker Desktop, Figma, Google Chrome, Keyboard Maestro, LocalSend, Logi Options+, Notion, Obsidian, Shottr, Vorssaint, WezTerm, Zed, ScreenBrush e RAR Extractor.
+AeroSpace, Bitwarden, Claude, Discord, Docker Desktop, Figma, Google Chrome, Keyboard Maestro, LocalSend, Logi Options+, Notion, Obsidian, Raycast, Shottr, Vorssaint, WezTerm, Zed, ScreenBrush e RAR Extractor.
 
 Instalação manual:
 

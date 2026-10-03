@@ -2,7 +2,6 @@
 tap "nikitabobko/tap"
 
 # Apps (Casks)
-cask "alfred"
 cask "figma"
 cask "obsidian"
 cask "discord"
@@ -12,6 +11,7 @@ cask "keyboard-maestro"
 cask "claude"
 cask "zed"
 cask "google-chrome"
+cask "raycast"
 cask "logi-options+"
 cask "notion"
 cask "localsend"
