@@ -19,6 +19,7 @@ cask "bitwarden"
 cask "vorssaint"
 cask "wezterm"
 cask "docker-desktop"
+cask "jordanbaird-ice"
 
 cask "font-meslo-lg-nerd-font"
 cask "nikitabobko/tap/aerospace", trusted: true
