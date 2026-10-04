@@ -21,6 +21,11 @@ cask "wezterm"
 cask "docker-desktop"
 cask "jordanbaird-ice"
 
+# Security (Objective-See)
+cask "lulu"
+cask "blockblock"
+cask "knockknock"
+
 cask "font-meslo-lg-nerd-font"
 cask "nikitabobko/tap/aerospace", trusted: true
 

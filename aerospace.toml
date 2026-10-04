@@ -83,6 +83,10 @@ if.app-id = 'com.apple.systempreferences'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = 'com.objective-see.lulu.app'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'org.localsend.localsendApp'
 run = 'layout floating'
 
