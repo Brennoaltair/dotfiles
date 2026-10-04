@@ -206,7 +206,6 @@ link ".gitconfig"         ".gitconfig"
 link ".gitignore_global"  ".gitignore_global"
 link ".config/nvim"                 ".config/nvim"
 link ".config/wezterm"              ".config/wezterm"
-link "aerospace.toml"               ".config/aerospace/aerospace.toml"
 install_launch_agent
 
 # ── Brew auto-update (10h diariamente) ────────────────────────────────────────

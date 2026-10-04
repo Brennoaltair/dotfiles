@@ -1,5 +1,5 @@
 # Taps
-tap "nikitabobko/tap"
+# tap "nikitabobko/tap"
 
 # Apps (Casks)
 cask "figma"
@@ -27,7 +27,7 @@ cask "blockblock"
 cask "knockknock"
 
 cask "font-meslo-lg-nerd-font"
-cask "nikitabobko/tap/aerospace", trusted: true
+# cask "nikitabobko/tap/aerospace", trusted: true
 
 # CLIs (Brew)
 brew "mas"
