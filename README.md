@@ -21,13 +21,10 @@ ffmpeg, gh, git-lfs, glab, jq, mas, neovim, node, pipx, sevenzip, shellcheck, yt
 
 ## AeroSpace
 
+Todas as janelas abrem flutuantes no workspace atual, sem tiling automático.
+
 | Tecla | O que faz |
 |---|---|
-| `Alt+Q` / `Alt+W` / `Alt+E` | Accordion vertical / horizontal / tiles |
 | `Alt+1…8` | Vai pro workspace |
 | `Alt+Shift+1…8` | Manda a janela pro workspace |
-| `Alt+;` | Volta pra janela anterior |
-| `Alt+Shift+Space` | Alterna flutuante / tiling |
 | `Alt+Shift+R` | Recarrega a config |
-| `Alt+N` / `T` / `B` / `F` | Notion / WezTerm / Bitwarden / Finder |
-| `Alt+G` | Abre o GitHub |
