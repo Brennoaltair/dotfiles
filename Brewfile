@@ -18,6 +18,7 @@ cask "localsend"
 cask "bitwarden"
 cask "vorssaint"
 cask "ghostty"
+cask "cmux"
 cask "docker-desktop"
 cask "jordanbaird-ice"
 

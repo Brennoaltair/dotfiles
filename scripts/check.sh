@@ -49,9 +49,10 @@ env HOMEBREW_NO_AUTO_UPDATE=1 brew bundle list --all --file=Brewfile >/dev/null
     eval "$(sed -n '/^# ── Helpers/,/^# ── Banner/p' install.sh)"
     mkdir -p "$HOME/.config/nvim"
     eval "$(grep '^link ' install.sh)" >/dev/null
-    [[ "$(grep -c '^link ' install.sh)" -eq 7 ]] || exit 1
-    while read -r _ src dst; do
-        [[ "$(readlink "$HOME/${dst//\"/}")" == "$ROOT/${src//\"/}" ]] || exit 1
+    [[ "$(grep -c '^link ' install.sh)" -eq 8 ]] || exit 1
+    while read -r line; do
+        eval "set -- ${line#link }"
+        [[ "$(readlink "$HOME/$2")" == "$ROOT/$1" ]] || exit 1
     done < <(grep '^link ' install.sh)
     rm -rf "$HOME"
 )
