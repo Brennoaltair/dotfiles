@@ -205,7 +205,7 @@ link ".zshrc"             ".zshrc"
 link ".gitconfig"         ".gitconfig"
 link ".gitignore_global"  ".gitignore_global"
 link ".config/nvim"                 ".config/nvim"
-link ".config/wezterm"              ".config/wezterm"
+link ".config/ghostty"              ".config/ghostty"
 link "aerospace.toml"               ".config/aerospace/aerospace.toml"
 install_launch_agent
 

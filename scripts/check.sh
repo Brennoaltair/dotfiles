@@ -15,7 +15,7 @@ shellcheck -x install.sh macos-defaults.sh scripts/brew-autoupdate.sh scripts/ch
 plutil -lint LaunchAgents/com.brenno.brew-autoupdate.plist >/dev/null
 python3 -c 'import pathlib, tomllib; [tomllib.loads(pathlib.Path(path).read_text()) for path in ("aerospace.toml",)]'
 nvim --clean --headless -i NONE -u .config/nvim/init.lua \
-    '+lua assert(loadfile(".config/wezterm/wezterm.lua"))' '+qa'
+    '+qa'
 env HOMEBREW_NO_AUTO_UPDATE=1 brew bundle list --all --file=Brewfile >/dev/null
 
 (

@@ -11,7 +11,7 @@ setopt hist_verify
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
-# Shift+Enter (WezTerm sends ESC+CR) inserts a literal newline instead of submitting
+# Shift+Enter (Ghostty sends ESC+CR) inserts a literal newline instead of submitting
 insert-newline-widget() { LBUFFER+=$'\n' }
 zle -N insert-newline-widget
 bindkey '^[^M' insert-newline-widget

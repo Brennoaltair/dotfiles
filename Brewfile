@@ -17,7 +17,7 @@ cask "notion"
 cask "localsend"
 cask "bitwarden"
 cask "vorssaint"
-cask "wezterm"
+cask "ghostty"
 cask "docker-desktop"
 cask "jordanbaird-ice"
 
