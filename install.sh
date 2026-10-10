@@ -206,7 +206,6 @@ link ".gitconfig"         ".gitconfig"
 link ".gitignore_global"  ".gitignore_global"
 link ".config/nvim"                 ".config/nvim"
 link ".config/ghostty"              ".config/ghostty"
-link ".config/cmux/config.ghostty"  "Library/Application Support/com.cmuxterm.app/config.ghostty"
 link "aerospace.toml"               ".config/aerospace/aerospace.toml"
 install_launch_agent
 

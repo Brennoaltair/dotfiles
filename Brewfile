@@ -1,5 +1,6 @@
 # Taps
 tap "nikitabobko/tap"
+tap "stablyai/orca"
 
 # Apps (Casks)
 cask "figma"
@@ -9,7 +10,6 @@ cask "shottr"
 
 cask "keyboard-maestro"
 cask "claude"
-cask "zed"
 cask "google-chrome"
 cask "raycast"
 cask "logi-options+"
@@ -18,7 +18,7 @@ cask "localsend"
 cask "bitwarden"
 cask "vorssaint"
 cask "ghostty"
-cask "cmux"
+cask "stablyai/orca/orca"
 cask "docker-desktop"
 cask "jordanbaird-ice"
 
