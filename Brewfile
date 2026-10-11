@@ -46,6 +46,7 @@ brew "ffmpeg"
 brew "pipx"
 brew "sevenzip"
 brew "shellcheck"
+brew "glow"
 
 # Mac App Store
 mas "ScreenBrush", id: 1233965871
