@@ -51,6 +51,7 @@ brew "glow"
 # Mac App Store
 mas "ScreenBrush", id: 1233965871
 mas "RAR Extractor - Unarchiver", id: 646295438
+mas "DaVinci Resolve", id: 571213070
 
 # npm (global)
 npm "pnpm"
