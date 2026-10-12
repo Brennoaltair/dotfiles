@@ -3,7 +3,6 @@ tap "nikitabobko/tap"
 
 # Apps (Casks)
 cask "figma"
-cask "affinity"
 cask "obsidian"
 cask "discord"
 cask "shottr"
