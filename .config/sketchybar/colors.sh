@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export BAR_BG=0xFFD4D0C8
+export TEXT_COLOR=0xFF1F1F1F
+export SEP_COLOR=0xFF808080
+export FG=$TEXT_COLOR

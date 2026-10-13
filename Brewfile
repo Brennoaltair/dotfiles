@@ -1,5 +1,6 @@
 # Taps
 tap "nikitabobko/tap"
+tap "felixkratz/formulae"
 
 # Apps (Casks)
 cask "figma"
@@ -28,6 +29,7 @@ cask "knockknock"
 
 cask "font-meslo-lg-nerd-font"
 cask "nikitabobko/tap/aerospace", trusted: true
+brew "felixkratz/formulae/sketchybar"
 
 # CLIs (Brew)
 brew "mas"
