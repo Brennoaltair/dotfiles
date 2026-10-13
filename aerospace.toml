@@ -15,11 +15,6 @@ outer.right      = 0
 [mode.main.binding]
 alt-semicolon = 'focus-back-and-forth'
 
-# Layouts
-alt-q = 'layout v_accordion'
-alt-w = 'layout h_accordion'
-alt-e = 'layout tiles horizontal vertical'
-
 # Workspaces
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
