@@ -4,6 +4,7 @@ tap "felixkratz/formulae"
 
 # Apps (Casks)
 cask "figma"
+cask "affinity"
 cask "obsidian"
 cask "discord"
 cask "shottr"
