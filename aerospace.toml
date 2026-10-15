@@ -116,5 +116,5 @@ if.app-id = 'com.mitchellh.ghostty'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.valvesoftware.steam'
+if.app-name-regex-substring = '^steam'
 run = 'layout floating'
