@@ -44,6 +44,7 @@ alt-shift-space = 'layout floating tiling'
 
 # Atalhos de apps (letras livres)
 alt-n = 'exec-and-forget open -a Notion'
+alt-o = 'exec-and-forget open -a Obsidian'
 alt-t = 'exec-and-forget open -a Ghostty'
 alt-b = 'exec-and-forget open -a Bitwarden'
 alt-f = 'exec-and-forget open -a Finder'
