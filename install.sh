@@ -207,13 +207,7 @@ link ".gitignore_global"  ".gitignore_global"
 link ".config/nvim"                 ".config/nvim"
 link ".config/ghostty"              ".config/ghostty"
 link "aerospace.toml"               ".config/aerospace/aerospace.toml"
-link ".config/sketchybar"           ".config/sketchybar"
 install_launch_agent
-
-# ── Sketchybar service ────────────────────────────────────────────────────────
-echo ""
-echo "📊 Iniciando SketchyBar..."
-brew services start sketchybar &>/dev/null && log_ok "SketchyBar iniciado." || log_warn "SketchyBar: rode 'brew services start sketchybar' manualmente."
 
 # ── Brew auto-update (10h diariamente) ────────────────────────────────────────
 echo ""

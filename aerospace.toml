@@ -2,23 +2,16 @@ start-at-login = true
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 
-exec-on-workspace-change = ['/bin/bash', '-c', 'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE']
-
 [gaps]
 inner.horizontal = 0
 inner.vertical   = 0
 outer.left       = 0
-outer.bottom     = 28
+outer.bottom     = 0
 outer.top        = 0
 outer.right      = 0
 
 [mode.main.binding]
 alt-semicolon = 'focus-back-and-forth'
-
-# Layouts
-alt-q = 'layout v_accordion'
-alt-w = 'layout h_accordion'
-alt-e = 'layout tiles horizontal vertical'
 
 # Workspaces
 alt-1 = 'workspace 1'
@@ -40,7 +33,6 @@ alt-shift-7 = 'move-node-to-workspace 7'
 alt-shift-8 = 'move-node-to-workspace 8'
 
 alt-shift-r = 'reload-config'
-alt-shift-space = 'layout floating tiling'
 
 # Atalhos de apps (letras livres)
 alt-n = 'exec-and-forget open -a Notion'
@@ -48,6 +40,10 @@ alt-o = 'exec-and-forget open -a Obsidian'
 alt-t = 'exec-and-forget open -a Ghostty'
 alt-b = 'exec-and-forget open -a Bitwarden'
 alt-f = 'exec-and-forget open -a Finder'
+
+[[on-window-detected]]
+check-further-callbacks = true
+run = 'layout floating'
 
 # Workspace assignments
 [[on-window-detected]]
@@ -65,49 +61,3 @@ run = 'move-node-to-workspace 2'
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace 4'
-
-
-# Float rules
-[[on-window-detected]]
-if.app-id = 'com.apple.finder'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.imagestudiopro.ScreenBrush'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.mail'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.QuickTimePlayerX'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.systempreferences'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.objective-see.lulu.app'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'org.localsend.localsendApp'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'cc.ffitch.shottr'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.bitwarden.desktop'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.github.wez.wezterm'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.mitchellh.ghostty'
-run = 'layout floating'
