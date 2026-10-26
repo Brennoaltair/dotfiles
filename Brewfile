@@ -22,7 +22,6 @@ cask "ghostty"
 cask "visual-studio-code"
 cask "stablyai/orca/orca"
 cask "docker-desktop"
-cask "jordanbaird-ice"
 
 cask "font-meslo-lg-nerd-font"
 cask "nikitabobko/tap/aerospace", trusted: true
