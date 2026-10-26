@@ -5,7 +5,6 @@ tap "stablyai/orca"
 
 # Apps (Casks)
 cask "figma"
-cask "affinity"
 cask "obsidian"
 cask "discord"
 cask "shottr"
@@ -24,11 +23,6 @@ cask "visual-studio-code"
 cask "stablyai/orca/orca"
 cask "docker-desktop"
 cask "jordanbaird-ice"
-
-# Security (Objective-See)
-cask "lulu"
-cask "blockblock"
-cask "knockknock"
 
 cask "font-meslo-lg-nerd-font"
 cask "nikitabobko/tap/aerospace", trusted: true
@@ -54,7 +48,6 @@ brew "glow"
 # Mac App Store
 mas "ScreenBrush", id: 1233965871
 mas "RAR Extractor - Unarchiver", id: 646295438
-mas "DaVinci Resolve", id: 571213070
 
 # npm (global)
 npm "pnpm"
