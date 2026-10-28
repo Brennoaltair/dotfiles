@@ -8,6 +8,7 @@ cask "figma"
 cask "obsidian"
 cask "discord"
 cask "shottr"
+cask "handbrake-app"
 
 cask "keyboard-maestro"
 cask "claude"
