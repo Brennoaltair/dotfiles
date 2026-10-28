@@ -56,28 +56,6 @@ link() {
     log_ok "$dst → $src"
 }
 
-install_launch_agent() {
-    local template="$DOTFILES/LaunchAgents/com.brenno.brew-autoupdate.plist"
-    local dst="$HOME/Library/LaunchAgents/com.brenno.brew-autoupdate.plist"
-    local tmp
-
-    mkdir -p "$(dirname "$dst")"
-    tmp="$(mktemp "${TMPDIR:-/tmp}/com.brenno.brew-autoupdate.plist.XXXXXX")"
-    cp "$template" "$tmp"
-    plutil -remove ProgramArguments.0 "$tmp"
-    plutil -insert ProgramArguments.0 -string "$DOTFILES/scripts/brew-autoupdate.sh" "$tmp"
-    plutil -lint "$tmp" >/dev/null
-
-    if [ -f "$dst" ] && cmp -s "$tmp" "$dst"; then
-        rm "$tmp"
-        log_skip "$dst"
-        return
-    fi
-
-    mv -f "$tmp" "$dst"
-    log_ok "$dst gerado para este clone"
-}
-
 # ── Banner ────────────────────────────────────────────────────────────────────
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -87,7 +65,7 @@ echo ""
 
 # ── Bootstrap remoto (curl) ───────────────────────────────────────────────────
 # Executado via curl, o script não está dentro de um clone: clona o repositório
-# e reexecuta o install.sh local, que é quem os symlinks e o LaunchAgent usam.
+# e reexecuta o install.sh local, usado como base dos symlinks.
 SCRIPT_PATH="${BASH_SOURCE[0]:-}"
 if [[ -z "$SCRIPT_PATH" || ! -f "$SCRIPT_PATH" || ! -f "$DOTFILES/Brewfile" ]]; then
     REPO_URL="https://github.com/Brennoaltair/dotfiles.git"
@@ -207,19 +185,6 @@ link ".gitignore_global"  ".gitignore_global"
 link ".config/nvim"                 ".config/nvim"
 link ".config/ghostty"              ".config/ghostty"
 link "aerospace.toml"               ".config/aerospace/aerospace.toml"
-install_launch_agent
-
-# ── Brew auto-update (10h diariamente) ────────────────────────────────────────
-echo ""
-echo "⏰ Agendando update automático do Homebrew..."
-LAUNCH_AGENT="$HOME/Library/LaunchAgents/com.brenno.brew-autoupdate.plist"
-launchctl bootout "gui/$(id -u)" "$LAUNCH_AGENT" &>/dev/null || true
-if launchctl bootstrap "gui/$(id -u)" "$LAUNCH_AGENT"; then
-    log_ok "LaunchAgent ativo (roda todo dia às 10h, log em ~/Library/Logs/brew-autoupdate.log)."
-else
-    log_warn "LaunchAgent: falha ao carregar. Rode manualmente: launchctl bootstrap gui/\$(id -u) ~/Library/LaunchAgents/com.brenno.brew-autoupdate.plist"
-    exit 1
-fi
 
 # ── macOS defaults ────────────────────────────────────────────────────────────
 if ! bash "$DOTFILES/macos-defaults.sh"; then

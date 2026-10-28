@@ -11,8 +11,7 @@ done
 for script in .zprofile .zshrc; do
     zsh -n "$script"
 done
-shellcheck -x install.sh macos-defaults.sh scripts/brew-autoupdate.sh scripts/check.sh
-plutil -lint LaunchAgents/com.brenno.brew-autoupdate.plist >/dev/null
+shellcheck -x install.sh macos-defaults.sh scripts/check.sh
 python3 -c 'import pathlib, tomllib; [tomllib.loads(pathlib.Path(path).read_text()) for path in ("aerospace.toml",)]'
 nvim --clean --headless -i NONE -u .config/nvim/init.lua \
     '+qa'
