@@ -13,11 +13,7 @@ Tema escuro neutro, cantos retos e abas na lateral com a Sidebery.
 
 1. Instale as extensões Sidebery e Firefox Color.
 2. Em `about:config`, deixe `toolkit.legacyUserProfileCustomizations.stylesheets` como `true`.
-3. Em `about:support`, copie o caminho da "Pasta do perfil" e ligue a pasta `chrome`:
-
-   ```bash
-   ln -s ~/dotfiles/librewolf/chrome "<pasta do perfil>/chrome"
-   ```
+3. Em `about:support`, clique em "Abrir no Finder" na linha "Pasta do perfil" e copie a pasta `chrome` para dentro dela.
 
 4. Em `about:addons`, ⚙️ → "Instalar extensão de arquivo…" e escolha `theme.zip`.
    Se o LibreWolf recusar o arquivo, abra color.firefox.com e digite as cores abaixo.
