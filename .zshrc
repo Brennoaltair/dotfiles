@@ -104,3 +104,5 @@ fpath=(/Users/brennoaltair/.docker/completions $fpath)
 autoload -Uz compinit
 (( ${+_comps[docker]} )) || compinit
 # End of Docker CLI completions
+[ -f ~/.secrets ] && source ~/.secrets
+export GITHUB_TOKEN=$(gh auth token)
