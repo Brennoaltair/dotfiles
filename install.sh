@@ -180,6 +180,7 @@ echo "🔗 Criando symlinks..."
 
 link ".zprofile"          ".zprofile"
 link ".zshrc"             ".zshrc"
+link ".p10k.zsh"          ".p10k.zsh"
 link ".gitconfig"         ".gitconfig"
 link ".gitignore_global"  ".gitignore_global"
 link ".config/nvim"                 ".config/nvim"

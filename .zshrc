@@ -1,3 +1,8 @@
+# ── Powerlevel10k instant prompt (precisa ficar no topo) ──────────────────────
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # ── History ───────────────────────────────────────────────────────────────────
 HISTFILE=$HOME/.zhistory
 SAVEHIST=50000
@@ -74,6 +79,13 @@ export BAT_THEME="tokyonight_night"
 
 # ── zoxide (smarter cd) ────────────────────────────────────────────────────────
 eval "$(zoxide init zsh)"
+
+# ── Powerlevel10k ─────────────────────────────────────────────────────────────
+if command -v brew &>/dev/null; then
+  P10K_THEME="$(brew --prefix powerlevel10k)/share/powerlevel10k/powerlevel10k.zsh-theme"
+  [[ -r "$P10K_THEME" ]] && source "$P10K_THEME"
+fi
+[[ -r ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 # ── Autosuggestions ───────────────────────────────────────────────────────────
 if command -v brew &>/dev/null; then
