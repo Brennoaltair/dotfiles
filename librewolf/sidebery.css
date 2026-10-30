@@ -1,0 +1,18 @@
+/* Abas maiores, fonte de 16px e cantos retos */
+#root.root {
+  --tabs-height: 36px;
+  --tabs-inner-gap: 8px;
+  --tabs-margin: 4px;
+  --tabs-font: 16px sans-serif;
+  --tabs-count-font: 16px sans-serif;
+  --general-margin: 4px;
+  --general-border-radius: 0;
+  --active-el-shadow: none;
+}
+
+/* Aba atual e painel atual com contorno cinza claro */
+.Tab[data-active="true"] .body,
+.NavigationBar .nav-item[data-active="true"] {
+  border: 2px solid #bfbfbf !important;
+  border-radius: 0 !important;
+}

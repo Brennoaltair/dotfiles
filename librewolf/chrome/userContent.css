@@ -1,0 +1,52 @@
+/* Páginas internas (about:*) em tema escuro neutro */
+@-moz-document url-prefix("about:") {
+  :root {
+    --fundo: #121212;
+    --caixa: #1e1e1e;
+    --caixa-clara: #2a2a2a;
+    --borda: #3a3a3a;
+    --texto: #e6e6e6;
+    --texto-apagado: #8c8c8c;
+    --destaque: #bfbfbf;
+    --destaque-claro: #d9d9d9;
+    --link: #b3b3b3;
+
+    --background-color-canvas: var(--fundo) !important;
+    --background-color-box: var(--caixa) !important;
+    --background-color-box-info: var(--caixa) !important;
+    --background-color-information: var(--caixa-clara) !important;
+    --border-color: var(--borda) !important;
+    --border-color-deemphasized: var(--borda) !important;
+    --text-color: var(--texto) !important;
+    --text-color-deemphasized: var(--texto-apagado) !important;
+    --color-accent-primary: var(--destaque) !important;
+    --color-accent-primary-hover: var(--destaque-claro) !important;
+    --color-accent-primary-active: var(--destaque-claro) !important;
+    --color-accent-secondary: var(--destaque-claro) !important;
+    --text-color-accent-primary-selected: var(--texto) !important;
+    --button-background-color-muted: var(--caixa-clara) !important;
+    --button-border: 2px solid var(--borda) !important;
+    --link-color: var(--link) !important;
+    --link-color-hover: var(--destaque-claro) !important;
+    --table-background-color: var(--caixa) !important;
+    --table-border-color: var(--borda) !important;
+    --table-header-background-color: var(--caixa-clara) !important;
+    --table-row-background-color: var(--fundo) !important;
+    --table-row-background-color-alternate: var(--caixa) !important;
+  }
+
+  body {
+    background-color: var(--fundo) !important;
+    color: var(--texto) !important;
+  }
+
+  * {
+    border-radius: 0 !important;
+  }
+
+  button:hover,
+  .button:hover {
+    background-color: var(--destaque) !important;
+    color: var(--fundo) !important;
+  }
+}

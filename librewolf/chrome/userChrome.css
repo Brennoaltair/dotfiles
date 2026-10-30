@@ -1,0 +1,19 @@
+/* Abas ficam só na barra lateral (Sidebery) */
+#TabsToolbar {
+  visibility: collapse !important;
+}
+
+/* Barra lateral sem cabeçalho e encostada na borda */
+#sidebar-header,
+#sidebar-panel-header {
+  display: none !important;
+}
+
+#sidebar-box {
+  padding-inline-start: 0 !important;
+}
+
+/* Cantos retos em toda a interface */
+* {
+  border-radius: 0 !important;
+}
