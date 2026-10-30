@@ -2,3 +2,4 @@ font-family = "MesloLGS Nerd Font Mono"
 font-size = 19
 keybind = shift+enter=text:\x1b\r
 quit-after-last-window-closed = true
+background = #000000
