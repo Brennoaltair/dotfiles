@@ -23,7 +23,7 @@
     --color-accent-primary-hover: var(--destaque-claro) !important;
     --color-accent-primary-active: var(--destaque-claro) !important;
     --color-accent-secondary: var(--destaque-claro) !important;
-    --text-color-accent-primary-selected: var(--texto) !important;
+    --text-color-accent-primary-selected: var(--fundo) !important;
     --button-background-color-muted: var(--caixa-clara) !important;
     --button-border: 2px solid var(--borda) !important;
     --link-color: var(--link) !important;
@@ -42,6 +42,17 @@
 
   * {
     border-radius: 0 !important;
+  }
+
+  th {
+    color: var(--texto) !important;
+  }
+
+  button,
+  .button {
+    background-color: #303030 !important;
+    color: var(--texto) !important;
+    border-color: #707070 !important;
   }
 
   button:hover,
