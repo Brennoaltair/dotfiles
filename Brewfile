@@ -1,7 +1,6 @@
 # Taps
 tap "nikitabobko/tap"
 tap "felixkratz/formulae"
-tap "stablyai/orca"
 
 # Apps (Casks)
 cask "figma"
@@ -21,7 +20,7 @@ cask "bitwarden"
 cask "vorssaint"
 cask "ghostty"
 cask "visual-studio-code"
-cask "stablyai/orca/orca"
+cask "cmux"
 cask "docker-desktop"
 
 cask "font-meslo-lg-nerd-font"
