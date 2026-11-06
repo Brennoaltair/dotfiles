@@ -20,7 +20,6 @@ cask "bitwarden"
 cask "vorssaint"
 cask "ghostty"
 cask "visual-studio-code"
-cask "cmux"
 cask "docker-desktop"
 
 cask "font-meslo-lg-nerd-font"
