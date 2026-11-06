@@ -19,7 +19,7 @@ cask "localsend"
 cask "bitwarden"
 cask "vorssaint"
 cask "ghostty"
-cask "visual-studio-code"
+cask "zed"
 cask "docker-desktop"
 
 cask "font-meslo-lg-nerd-font"
