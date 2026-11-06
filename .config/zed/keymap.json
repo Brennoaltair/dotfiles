@@ -1,0 +1,14 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-w": "zed::Quit"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "cmd-w": "zed::Quit"
+    }
+  }
+]

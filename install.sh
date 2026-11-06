@@ -185,6 +185,7 @@ link ".gitconfig"         ".gitconfig"
 link ".gitignore_global"  ".gitignore_global"
 link ".config/nvim"                 ".config/nvim"
 link ".config/ghostty"              ".config/ghostty"
+link ".config/zed/keymap.json"     ".config/zed/keymap.json"
 link "aerospace.toml"               ".config/aerospace/aerospace.toml"
 
 # ── macOS defaults ────────────────────────────────────────────────────────────
